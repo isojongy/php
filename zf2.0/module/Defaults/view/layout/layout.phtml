@@ -1,0 +1,206 @@
+﻿<?php echo $this->doctype() ?>
+<html>
+<head>
+	<?php 
+		echo $this->headTitle("Nhac Online") ; //set Title website
+		echo $this->headLink(array('rel' => 'icon' , 'href' => $this->basePath().'/source/favicon.ico' ), 'PREPEND'); 
+		echo $this->headLink()->appendStylesheet($this->basePath()."/source/default/css/styles.css")
+							->offsetSetStylesheet("2", $this->basePath()."/source/font-awesome-4.3.0/css/font-awesome.min.css")
+							->offsetSetStylesheet("3", $this->basePath()."/source/default/css/style_dark.css")
+							->offsetSetStylesheet("4", $this->basePath()."/source/default/css/bbpress.css")
+							->offsetSetStylesheet("6", $this->basePath()."/source/default/css/common.css")
+							->offsetSetStylesheet("7", $this->basePath()."/source/default/css/selective.css")
+							->offsetSetStylesheet("8", $this->basePath()."/source/default/css/setting.css")
+							->offsetSetStylesheet("9", $this->basePath()."/source/default/css/symple_shortcodes_styles.css")
+							->offsetSetStylesheet("10", $this->basePath()."/source/default/css/woocommerce-layout.css")
+							->offsetSetStylesheet("11", $this->basePath()."/source/default/css/woocommerce-smallscreen.css")
+							->offsetSetStylesheet("12", $this->basePath()."/source/default/css/woocommerce.css")
+							->offsetSetStylesheet("13", $this->basePath()."/source/default/css/style_remix.css")
+							->offsetSetStylesheet("14", $this->basePath()."/source/default/css/shop.css")
+							->offsetSetStylesheet("15", $this->basePath()."/source/default/css/responsive.css")
+							->offsetSetStylesheet("16", $this->basePath()."/source/default/css/masterslider.main.css")
+							->offsetSetStylesheet("17", $this->basePath()."/source/default/css/custom.css")
+							->offsetSetStylesheet("18", $this->basePath()."/source/default/css/font_css.css")
+							->offsetSetStylesheet("19", $this->basePath()."/source/default/css/style_customer.css");
+		
+		echo $this->headScript()->appendFile($this->basePath()."/source/default/js/jquery.js")
+							->offsetSetFile("2", $this->basePath()."/source/default/js/jquery.themepunch.revolution.min.js")
+							->offsetSetFile("3", $this->basePath()."/source/default/js/jquery.themepunch.tools.min.js")
+							->offsetSetFile("4", $this->basePath()."/source/default/js/jquery-migrate.min.js")
+							->offsetSetFile("5", $this->basePath()."/source/default/js/editor.js")
+							->offsetSetFile("6", $this->basePath()."/source/default/js/jquery.form.min.js")
+							->offsetSetFile("7", $this->basePath()."/source/default/js/scripts.js")
+							->offsetSetFile("8", $this->basePath()."/source/default/js/sf.js")
+							->offsetSetFile("9", $this->basePath()."/source/default/js/sf_selective.js")
+							->offsetSetFile("10", $this->basePath()."/source/default/js/ajax-load-more.js")
+							->offsetSetFile("11", $this->basePath()."/source/default/js/jquery.blockUI.min.js")
+							->offsetSetFile("12", $this->basePath()."/source/default/js/woocommerce.min.js")
+							->offsetSetFile("13", $this->basePath()."/source/default/js/jquery.cookie.min.js")
+							->offsetSetFile("14", $this->basePath()."/source/default/js/cart-fragments.min.js")
+							->offsetSetFile("15", $this->basePath()."/source/default/js/remix.min.js")
+							->offsetSetFile("16", $this->basePath()."/source/default/js/owl.carousel.min.js")
+							->offsetSetFile("17", $this->basePath()."/source/default/js/jquery.fitvids.js")
+							->offsetSetFile("18", $this->basePath()."/source/default/js/jquery.jplayer.js")
+							->offsetSetFile("19", $this->basePath()."/source/default/js/ttw-music-player-min.js")
+							->offsetSetFile("20", $this->basePath()."/source/default/js/jquery.nicescroll.min.js")
+							->offsetSetFile("21", $this->basePath()."/source/default/js/smoothscroll.js")
+							->offsetSetFile("22", $this->basePath()."/source/default/js/jquery.prettyPhoto.js")
+							->offsetSetFile("23", $this->basePath()."/source/default/js/modernizr.custom.63321.js")
+							->offsetSetFile("24", $this->basePath()."/source/default/js/jquery.stapel.js")
+							->offsetSetFile("25", $this->basePath()."/source/default/js/custom.js")
+							->offsetSetFile("26", $this->basePath()."/source/default/js/script_customer.js");
+	
+		echo $this->headMeta()->appendHttpEquiv('Content-Type' , 'text/html; charset=UTF-8' ); // set utf-8 cho website
+	?>
+</head>
+<body class="blog wpb-js-composer js-comp-ver-4.3.3 vc_responsive" id="">
+	<?php echo $this->layout()->content ?>
+	<?php 
+		//if($status=='comingSoon') require "comingSoon.php";
+		//else 
+		{
+	?>
+	
+
+	<script type="text/javascript">
+			/* <![CDATA[ */
+				var sf_position = '0';
+				var sf_templates = "<a href=\"{search_url_escaped}\"><span class=\"sf_text\">See more results for \"{search_value}\"<\/span><span class=\"sf_small\">Displaying top {total} results<\/span><\/a>";
+				var sf_input = '.sf_input';
+				jQuery(document).ready(function(){
+					jQuery(sf_input).ajaxyLiveSearch({"expand":false,"searchUrl":"http:\/\/theme20.com\/remix\/?s=%s","text":"","delay":500,"iwidth":180,"width":315,"ajaxUrl":"http:\/\/theme20.com\/remix\/wp-admin\/admin-ajax.php","rtl":0});
+					jQuery(".sf_ajaxy-selective-input").keyup(function() {
+						var width = jQuery(this).val().length * 8;
+						if(width < 50) {
+							width = 50;
+						}
+						jQuery(this).width(width);
+					});
+					jQuery(".sf_ajaxy-selective-search").click(function() {
+						jQuery(this).find(".sf_ajaxy-selective-input").focus();
+					});
+					jQuery(".sf_ajaxy-selective-close").click(function() {
+						jQuery(this).parent().remove();
+					});
+				});
+			/* ]]> */
+		</script>
+		<script type="text/javascript">
+		//<![CDATA[
+			var ajaxurl_T20 = 'http://theme20.com/remix/wp-admin/admin-ajax.php';
+		//]]>
+		</script>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">
+			.tt_logo, .tt_text {margin-top:17px !important; margin-bottom:20px !important}
+			.symple-skillbar {background-color: rgba(238, 238, 238, 0.12)}.symple-box.gray, .symple-toggle .symple-toggle-trigger, .symple-accordion h3.symple-accordion-trigger, .symple-tabs .tab-content, .symple-tabs ul.ui-tabs-nav li a {color: #D1D1D1;background-color: #161616;border: 1px solid #383838}
+			.symple-toggle .symple-toggle-trigger, .symple-toggle .symple-toggle-container, .symple-accordion h3.symple-accordion-trigger {border-color: #242424}
+			.symple-tabs ul.ui-tabs-nav {border-color: #242424;border-bottom: none}
+			.symple-accordion .ui-accordion-content {background: none;border-color: #242424}
+			.symple-skill-bar-percent, .symple-accordion .symple-accordion-trigger.ui-state-active a, .symple-tabs ul.ui-tabs-nav .ui-state-active a, .symple-callout-caption {color: #fff !important}
+			.symple-toggle .symple-toggle-trigger.active, .symple-toggle .symple-toggle-trigger.active:hover, .symple-accordion .symple-accordion-trigger.ui-state-active, .symple-tabs ul.ui-tabs-nav .ui-state-active a, .symple-testimonial-content, .symple-callout {color: #F7F7F7;background-color: #202020}.symple-toggle .symple-toggle-trigger:hover, .symple-accordion h3.symple-accordion-trigger:hover, .symple-tabs ul.ui-tabs-nav .ui-state-active a:hover, .symple-tabs ul.ui-tabs-nav li a:hover {background-color: #1B1B1B}
+			.symple-testimonial-content:after {border-right: 15px solid #202020}
+		</style>
+	<div id="layout" class="full">
+			
+			<!-- Begin login -->
+			<?php require "block/login.php" ?>
+			<!-- End login -->
+			
+			<div id="LoginBackgroundPopup"></div>
+			
+			<!-- Begin header -->
+			<?php require "block/header.php" ?>
+			<!-- End login -->
+			<?php if($this->status=='trangchu') require "block/popular.php" ?>
+			<!-- Begin popular -->
+			<!-- Begin nội dung block (top music, like fb, ...) -->
+		
+			
+			<div class="under_header">
+				<?php 
+					$img1=$this->basePath().'/source/default/images/under_header1.png';
+					$img2=$this->basePath().'/source/default/images/under_header2.png';
+				?>
+				<img src="<?php if(time()%2==0) echo $img1; else echo $img2 ?>" alt="">
+			</div><!--/cover-->
+	<div class="page-content">
+		<?php 
+			if($this->status=='trangchu') require "pages/trangchu.php";
+			if($this->status=='lienhe') require "pages/lienhe.php";
+			if($this->status=='nhacmp3') require "pages/nhacmp3.php";
+			if($this->status=='videos') require "pages/videos.php";
+			if($this->status=='nghesi' || $this->status=='casi' || $this->status=='nhomnhac') 
+				require "pages/nghesi.php";
+			//require "pages/nghenhac.php";
+		?>
+	</div>
+	
+	<!-- Begin footer -->
+	<?php require "block/footer.php" ?>
+	<!-- End footer -->
+	
+	</div><!-- /layout -->
+	<script type="text/javascript">
+			var isProcessing = false; 
+			function alter_ul_post_values(obj,post_id,ul_type){
+			
+				if (isProcessing)    
+				return;  
+				isProcessing = true;   
+				
+				jQuery(obj).find("span").html("...");
+			    	jQuery.ajax({
+			   		type: "POST",
+			   		url: "http://theme20.com/remix/wp-content/plugins/remix_cpt/ajax_counter.php",
+			   		data: "post_id="+post_id+"&up_type="+ul_type,
+			   		success: function(msg){
+			     			jQuery(obj).find("span").html(msg);
+						isProcessing = false; 
+			   		}
+			 	});
+			}
+		</script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var _wpcf7 = {"loaderUrl":"http:\/\/theme20.com\/remix\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+			/* ]]> */
+		</script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var alm_localize = {"ajaxurl":"http:\/\/theme20.com\/remix\/wp-admin\/admin-ajax.php","alm_nonce":"c956841d5b","pluginurl":"http:\/\/theme20.com\/remix\/wp-content\/plugins\/remix_cpt"};
+			/* ]]> */
+		</script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var wc_add_to_cart_params = {"ajax_url":"\/remix\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/theme20.com\/remix\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif","i18n_view_cart":"View Cart","cart_url":"http:\/\/theme20.com\/remix\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+			/* ]]> */
+		</script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var woocommerce_params = {"ajax_url":"\/remix\/wp-admin\/admin-ajax.php","ajax_loader_url":"\/\/theme20.com\/remix\/wp-content\/plugins\/woocommerce\/assets\/images\/ajax-loader@2x.gif"};
+			/* ]]> */
+		</script>
+		<script type='text/javascript'>
+			/* <![CDATA[ */
+			var wc_cart_fragments_params = {"ajax_url":"\/remix\/wp-admin\/admin-ajax.php","fragment_name":"wc_fragments"};
+			/* ]]> */
+		</script>
+		<script type="text/javascript">
+				/* <![CDATA[ */
+					jQuery(document).ready(function ($) {
+												$('[class^="scroll-"], [class*=" scroll-"], #popular_scroll').niceScroll({zindex:1000000,cursorborder:"0px solid #ccc",cursorborderradius:"4px",cursorcolor:"#ddd",cursorwidth:"6px",cursoropacitymin:.1});
+
+						var ua = navigator.userAgent.toLowerCase();
+						var isAndroid = ua.indexOf("android") > -1;
+						if(isAndroid) {
+							alert("Please check desktop request from browser menu (Required for music player)");
+						}
+					});
+				/* ]]> */
+			</script>
+	<?php
+			}
+	?>
+</body>
+</html>

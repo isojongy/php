@@ -1,0 +1,10 @@
+﻿Preparing for different Database-Backends 79
+What is database abstraction? 81
+Preparing the Database 93
+ Using Service Manager to configure the database credentials and inject into the controller . . . . . . 196
+ Setting up a database adapter 287
+ 
+ phân quyền
+ Database Table Authentication 305
+ Writing to Databases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1002
+ Database Schemas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1373

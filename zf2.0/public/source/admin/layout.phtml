@@ -1,0 +1,19 @@
+<?php echo $this->doctype() ?>
+<html>
+<head>
+	<?php 
+		echo $this->headTitle("Nhac Online | Admin Management") ; //set Title website
+		echo $this->headLink(); 
+		echo $this->headStyle(); //lay tat ca file css trong controller
+		echo $this->headScript(); // lay tat ca file javascript trong controller
+		echo $this->headMeta(); // set utf-8 cho website
+	?>
+</head>
+<body>
+	<?php echo $this->layout()->content ?>
+	<?php
+		if($this->status=='dangnhap')
+			require "dangnhap.php";
+	?>
+</body>
+</html>

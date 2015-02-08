@@ -1,0 +1,158 @@
+/* #Tablet (Landscape)
+----------------------------------------------------------------------*/
+@media only screen and (min-width: 959px) and (max-width: 1177px) {
+	body {overflow-x: hidden}
+	.boxed, .boxed-margin {width: 1000px}
+	.row { width: 944px }
+	.grid_12 .grid_12 .player_block .tracklist {width: 700px}
+	.grid_12 .grid_12 .player_block .player-controls {width: 740px}
+	.grid_12 .grid_12 .player_block .progress-wrapper {width: 582px}
+	.grid_12 .grid_6 .player_block .tracklist {width: 413px;margin-top: 10px}
+	.grid_12 .grid_6 .player_block .player-controls {width: 254px;top: 146px}
+	.grid_12 .grid_6 .player_block .progress-wrapper {width: 100px}
+	.grid_12 .grid_8 .player_block .tracklist {width: 368px;margin-top: 80px}
+	.grid_12 .grid_8 .player_block .player-controls {width: 408px;top: 44px}
+	.grid_12 .grid_8 .player_block .progress-wrapper {width: 250px}
+	.grid_12 .grid_4 .player_block .tracklist {width: 256px}
+	.grid_12 .grid_4 .player_block .player-controls {width: 184px}
+	.grid_12 .grid_4 .player_block .progress-wrapper {width: 30px}
+
+	.grid_8.alpha .tracklist, .grid_8.omega .tracklist {width: 316px}
+	.grid_8.alpha .player-controls, .grid_8.omega .player-controls {width: 356px}
+	.grid_8.alpha .progress-wrapper, .grid_8.omega .progress-wrapper {width: 200px}
+	.grid_12 .def-block .tracklist {width: 640px}
+	.grid_12 .def-block .player-controls {width: 680px}
+	.grid_12 .def-block .progress-wrapper {width: 522px}
+	.grid_6 .def-block .tracklist {width: 353px}
+	.grid_6 .def-block .player-controls {width: 190px}
+	.grid_6 .def-block .progress-wrapper {width: 37px}
+
+	.event-timer li {width: 55px}
+	.grid_3 .event-timer li {width: 73px}
+	.songs_tabs li a {font-size: 12px}
+	.remix_items a {width: 23.7%}
+	.Alphabet li a {padding: 4px 9.5px}
+}
+
+/* #Tablet (Portrait)
+----------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	body {overflow-x: hidden}
+	.boxed, .boxed-margin {width: 750px }
+	.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .widget .item img {width: 100% !important}
+	.row { width: 700px }
+	.little-head {float: none !important;display: table;margin: 0 auto}
+	.logo {float: none !important;display: table;margin: 28px auto 14px}
+	.sf-menu {float: none !important;display: table;margin: 20px auto 0 !important}
+	.sf-menu a {padding: 0 28px 30px 0}
+	.big_slider {margin: 0 !important}
+
+	.player_block .tracklist {width: 660px !important;margin-top: 10px !important}
+	.player_block .player-controls {width: 496px !important;top: 150px !important}
+	.player_block .progress-wrapper {width: 320px !important}
+	.def-block .tracklist {width: 600px !important;margin-top: 10px !important}
+	.def-block .player-controls {width: 434px !important;top: 150px !important}
+	.def-block .progress-wrapper {width: 272px !important}
+
+	.Alphabet li a {padding: 4px 16.5px;margin: 0 0 2px}
+	.copyright {float: none !important;margin: 0 auto 20px !important;display: table !important}
+	.foot-menu {float: none !important;margin: 0 auto !important;display: table !important}
+	.tabs li a {margin: 0 10px -1px 0;font-size: 14px}
+	.tp-info, .tp-title {max-width: 100%}
+	.tp-title span:nth-child(2) {display: none}
+	.tp-title {padding: 0 2px}
+	.tp-grid .grid_3 {width: 22% !important}
+	.tp-grid .grid_4 {width: 30% !important}
+	.tp-grid .grid_6 {width: 47% !important}
+	.event-timer li {width: 76px}
+	.remix_items a {width: 31.2%}
+}
+
+/* #Mobile (Landscape)
+----------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {overflow-x: hidden}
+	.boxed, .boxed-margin {width: 470px }
+	.boxed-margin {margin: 8px auto}
+	.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .event_content, .event_date {width: 100% !important}
+	.row { width: 400px }
+	.social-head {margin: 0 10px 0 0}
+	.little-head .search {margin: 10px 0 0 0}
+	.little-head .search input {font-size: 12px;width: 400px !important}
+	.little-head {float: none !important;display: table;margin: 0 auto}
+	a.btn_canvas {display: block}
+	.sf-menu {display: none !important }
+	.xpopdrop ul {display: block !important; visibility: inherit !important }
+	.big_slider {margin: 0 !important}
+
+	.player_block .tracklist {width: 360px !important;margin-top: 50px !important}
+	.player_block .player-controls {width: 400px !important;top: 192px !important}
+	.player_block .progress-wrapper {width: 244px !important}
+	.def-block .tracklist {width: 300px !important;margin-top: 50px !important}
+	.def-block .player-controls {width: 340px !important;top: 192px !important}
+	.def-block .progress-wrapper {width: 190px !important}
+	.def-block .track-info {margin: 40px 0 0}
+	.def-block .track-info span {display: block}
+
+	ul.listing li img {width: 96px}
+	.copyright {text-align: center;float: none !important;margin: 0 auto 20px !important;display: table !important}
+	.foot-menu {float: none !important;margin: 0 auto !important;display: table !important}
+	.tabs li a {margin: 0 10px -1px 0;font-size: 13px;font-weight: normal;}
+	.tp-info, .tp-title {max-width: 100%}
+	.tp-title span:nth-child(2), .back {display: none}
+	.tp-title {padding: 0 2px}
+	.tp-grid .grid_3, .tp-grid .grid_4, .tp-grid .grid_6 {width: 90% !important}
+	.table th {padding: 16px 5px}
+	ul.showcomments li.child {margin: 0 0px 32px 2px}
+	.remix_items a, .tab-content-items li {width: 99% !important}
+	.Alphabet li a {padding: 4px 6.5px;margin: 0 0 4px}
+	.medium_f.featured_img, ul.listing li img {margin: 0 20px 30px 0;width: 100%}
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {margin: 0 0 30px 0 !important;width: 100%}
+}
+
+/*  #Mobile (Portrait) 320px
+----------------------------------------------------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+	body {overflow-x: hidden}
+	.boxed, .boxed-margin {width: 310px }
+	.boxed-margin {margin: 8px auto;}
+	.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .event_content, .event_date {width: 100% !important}
+	.row { width: 290px; padding: 0; }
+	.social-head {margin: 0 10px 0 0}
+	.social a {width: 17px}
+	.little-head .search {margin: 10px 0 0 0}
+	.little-head .search input {font-size: 12px;width: 290px !important}
+	.little-head {float: none !important;display: table;margin: 0 auto}
+	a.btn_canvas {display: block}
+	.sf-menu {display: none !important }
+	.xpopdrop ul {display: block !important; visibility: inherit !important }
+	.big_slider {margin: 0 !important}
+
+	.player_block .tracklist {width: 250px !important;margin-top: 100px !important}
+	.player_block .player-controls {width: 290px !important;top: 245px !important}
+	.player_block .progress-wrapper {width: 134px !important}
+	.def-block .tracklist {width: 190px !important;margin-top: 100px !important}
+	.def-block .player-controls {width: 230px !important;top: 266px !important}
+	.def-block .progress-wrapper {width: 76px !important}
+	.track-info {margin: 200px 0 0 !important;left:0 !important}
+	.def-block .track-info {margin: 220px 0 0 !important;left:0 !important}
+
+	.Rmore {display: none}
+	ul.listing li img {width: 96px}
+	.copyright {text-align: center;float: none !important;margin: 0 auto 20px !important;display: table !important}
+	.foot-menu {float: none !important;margin: 0 auto !important;display: table !important}
+	.tabs li a {margin: 0 10px -1px 0;font-size: 13px;font-weight: normal;}
+	.tp-info, .tp-title {max-width: 100%}
+	.tp-title span:nth-child(2), .back {display: none}
+	.tp-title {padding: 0 2px}
+	.tp-grid .grid_3, .tp-grid .grid_4, .tp-grid .grid_6 {width: 90% !important}
+	.table th {padding: 16px 5px}
+	ul.showcomments li.child {margin: 0 0px 32px 2px}
+	.remix_items a, .tab-content-items li {width: 99% !important}
+	.Alphabet li a {padding: 4px 6.5px;margin: 0 0 4px}
+	.medium_f.featured_img, ul.listing li img {margin: 0 20px 30px 0;width: 100%}
+	#popupLogin {width: 310px}
+	.commentlist li li {padding-left: 0}
+	.event-timer li {width: 52px}
+	.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {margin: 0 0 30px 0 !important;width: 100%}
+}
